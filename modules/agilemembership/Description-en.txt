@@ -1,0 +1,45 @@
+http://www.prestashop.com/forums/viewthread/90033/
+
+Module - a PrestaShop Membership management module - Agile Membership
+
+Who should use module?
+======================
+Agile Membership is a PrestaShop management module. It is easy to install and configure. It will help store owners manage their membership based online store effectively and focus on their on business.
+With Agile Membership, you will have control of membership fees, membership expiration, member only access contents. 
+
+Feature
+==========
+    * Membership Fee settings for multiple type of membership types
+    * Membership Discount settings for multiple membership types
+    * Membership Expiration setting for multiple membership types
+    * Member only access contents access control based on permission setting
+    * Member access control is able to configure by page(include CMS page), by category, by product level
+    * Set show/hide membership information block on left/right column
+    * At back office, new tab Membership is added, you can confirm membership details.
+    * You can export membership information into Excel file, with filtering and sorting
+
+    * Access Permission Denied page will be displayed if user try to access member only contents but does not have privilege.
+    * My Membership is added to My Account. User is able to confirm membership at any time.
+    * Once membership is expired, module will automatically detect and revoke all privileges.
+    * User can choose membership at sign up
+    * User can purchase new membership (renewal) before membership expiration. And the new membership will automatically add on and expiration date will automatically calculated.
+    * User can use Voucher (issued by PrestaShop store) to purchase membership
+    * After sign up or log in, module will add user selected membership to shopping cart and redirect user to order page directly, if user has not purchased membership yet.
+
+	*Automatically send membership expiration reminder emails. (2011.07.15)
+	 You can configure how many times and how many days should be reminder email be sent.
+	 For example, send 3 times 10 day, 5 day, 1 days before expiration. 
+
+We accept customization, if you have any special requirement, please let us know.
+
+=============================
+Compatible PrestaShop version
+1.3.0 and higher
+
+
+Where to buy
+=============
+Get the Agile Membership - PrestaShip Membership management module now
+
+http://addons-modules.com/
+

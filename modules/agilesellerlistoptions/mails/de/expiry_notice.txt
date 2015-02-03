@@ -1,0 +1,12 @@
+Hi {seller_name},
+
+Just a reminder that some of your product list options has been expired.
+
+{expiredproducts}
+
+Please renew your product list options at our Website: {linkurl_to_expiredproducts_page}
+
+Thank you for using {shop_name} as your online marketplace.  If there is anything we can do to assist you in any way, feel free to contact us.
+
+
+{shop_url}

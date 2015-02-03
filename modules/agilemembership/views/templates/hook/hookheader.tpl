@@ -1,0 +1,2 @@
+<script language="javascript" type="text/javascript">
+$('document').ready(function() {	/** _agile_ hide all "add to cart" buttons if it is not a member _agile_ **/	$("#add_to_cart").hide();	$(".ajax_add_to_cart_button").hide();});</script>

@@ -1,0 +1,76 @@
+Ver 1.0 - 2012.02.15
+Features 
+-	Basic list option must always be selected if there is any other option is selected.
+-	All list options must be paid before it become in effect.
+-	The option fees payment will go through front store checkout process, and a order will be placed when option fees payment is done.
+-	Seller is able to pay listing options fees to store owner by any payment method that is available at your PrestaShop. 
+-	If price is set zero (0), then this option is free. It will become in effect as long as you select it and save it.
+-	Once the option is in effect, the option is disabled and seller it not able to change it until it expires.
+-	Once basic listing is expired, all other listing options will not be in effect even if those options are not expired because they added later than basic listing.
+-	The listing duration (expiration) is configurable at modules screen by days, weeks, months or year.
+-	Seller is able to disable the product by status (active/inactive) even when the listing options are still in effect.
+-	The product choose to show on top will be choose randomly for fairness of sellers. Those products do not choose “shop on TOP?will be listed after those “show on TOP? 
+-	If there option price is not set, it will be implicitly applied as 0 (free)
+
+
+Ver 1.1.0 - 2012.08.21
+- Change the listing valid period to at list option level. Each list option could have different length of list period.
+- Fix a bug the get_home_products SQL to show seller name
+- Fixed the basic list option date update issue;
+- Fixed the get home product issue(Basic list option must be paid);
+
+Ver 1.2.0 - 2012.10.20
+- Modules is adjusted to be compatible with PrestaShop 1.5x
+
+Ver 1.2.2 - 2012.12.01
+- Integrated with new released Agile Multiple Shop module which allow each seller to have a virtual shop, virtual directory and seperated themes.
+
+Ver 1.2.3 - 2012.12.09
+- Automatically set quantity to max for List Option fee products so that it will not be our of stock.
+- Allow Seller to choose list option from front store Product Management page (My Seller Account) when add/edit products.
+
+Ver 1.2.4 - 2013.03.24
+- Fixed an issue at List Optons Payment -> when seller pay with Token (integratred with Agile prepaid token/credit module). 
+Seller was able to reduced the quantity of itemsm but still get all options listed. 
+- Changed to display the product at Home (Show at Home option) in a random order so that all customer will be treatred fairly.
+
+Ver 1.2.5 - 2013.04.07
+- Compatible with PrestaShop 1.5.4. - changed to use PrestaShop 1.5x standard of module front page
+
+Ver 1.2.8 - 2013.04.07
+- List Option Cancellation
+A. Admin is able to cancel any List Options chosen by the sellers at product level, even if it is already paid, admin is able to cancel it.
+B. Admin is able to configure issuing cancellation refund or not for List Option cancellation 
+C. The cancellation refund is available if the agile seller commission modules is installed
+D. The Cancellation refund will be added to seller account history as credit of list option cancellation. 
+E. Seller can cancel any list options before it is paid. Once it is paid, only admin will be able to cancelled.
+
+Ver 1.2.9 - 2013.12.31
+- Show as HOT on product list pages such as category, search result, home featured(see install.txt)
+- Send notice email to product owner when list option expired. There is a link in the email link to Listing Expire Page
+- A new tab "Expired Products" at My Seller Account page that makes it easier for seller to update/renew the list options.
+- Configuration improvement
+  During installation of the module, it will automatically create the special category List Options for registering list option fee products. 
+  and it also create default list option fee product for each option, with default price. so store owner can easily configure by just change or modify price.
+- Seller List option module improvements - disable "reorder" function if any products in the order has been expired list options.(requires agile multiple seller version 2.2.2.1 or above)
+  it will displayed an error message when user try to reorder from My Account - Order History page
+
+
+Version 1.3.0.1 - 2014.04.26
+- support PrestaShop 1.6x
+- support responsive theme
+- fixed a bug - based list option expired, but Home list option is not expired, it will still be displayed at HOME
+- changed to use theme file for List Option selection GUI part. 
+
+
+Version 1.3.0.2 - 2014.06.22
+- Fixed mail template subject translation issue. (not able to translate mail subject)
+- Fixed duplication display of Expired Products when there are multiple options expired
+- Fixed Expired Products tab Save/Pay button not working properly
+- Compatible with Smart Cache for javascript and Smart Cache for CSS
+ 
+
+Version 1.4.0.1 - 2015.01.20
+- Feature: you are able to set "always free for base list option", so seller does not have to choose base list option for any product and it will be display automatically.
+- Fix: "Hot" character displaying issue (not showing completely)
+ 

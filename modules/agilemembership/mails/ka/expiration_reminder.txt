@@ -1,0 +1,8 @@
+Hi {firstname} {lastname},
+
+Your membership will expire in {days_to_expire} day(s)
+ 
+You can now renew your memebership at our Website: {shop_url}
+
+
+{shop_url}

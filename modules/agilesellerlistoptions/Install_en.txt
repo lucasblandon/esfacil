@@ -1,0 +1,53 @@
+New Install
+======================
+1. Login to PrestaShop back office and click Modules tab
+2. Click "Add a module from my computer" and choose the module package you have downlaoded and click "Upload this module"
+3. Input "agile" in the search bix of Module page and select "Agile Seller List Options"
+4. Click "install" link under the module, the module will be installed automatically.
+5. Click "Configure" link under the module, it will bring you to the module configuration screen
+
+
+Upgrade from old version
+========================
+0. As best practice, please back up your database for just in case.
+1. Record/Memo the module configuration parameters
+2. Uninstall old version of Agile Seller List Options, back office - Modules tab
+3. Delete the module (uninstalled already) , Back office - Modules tab
+   (make sure all files are gone via FTP or File manager)
+4. Execute above "New Insall" from 1. - 5.
+
+Your existing data will remain unchanged.
+But you will need to re-configure the module.
+
+
+Set up the module
+=================
+Create a special category (say “Listing Options Fees) at catalog for listing options fees
+-	It is deactivated so it will not show up on front office
+-	Set the owner (seller) to admin
+
+Create products for each of following listing options, price = listing option fee
+-	Basic list  
+-	Show at HOME
+-	Show as HOT
+-	Show on TOP of list
+
+
+Addtitional setup
+In order to show HOT option on product list, you need to make following changes.
+files: 
+YourStoreRoot/themes/YourTheme/product-list.tpl
+YourStoreRoot/themes/YourTheme/modules/homefeatured/homefeatured.tpl
+
+Find following lines
+	{foreach from=$products item=product name=products}
+		<li class="ajax_block_product {if $smarty.foreach.products.first}first_item{elseif $smarty.foreach.products.last}last_item{/if} {if $smarty.foreach.products.index % 2}alternate_item{else}item{/if} clearfix">
+
+Add following lines right after above 2 lines.
+			{if isset($product.ishot) AND $product.ishot==1}
+				<div style="font-size:x-large;color:Red; float:right;">
+				<table><tr><td>{l s='HOT'}</td><td><img src="{$base_dir_ssl}modules/agilesellerlistoptions/imgs/hot.png" /></td></tr></table>
+				</div>
+			{/if}
+
+

@@ -1,0 +1,152 @@
+﻿Version 1.0 - 2011.02.01
+Feature
+* Membership Fee settings for multiple type of membership typest
+* Membership Expiration setting for multiple membership typees
+* Member only access contents access control based on permission setting
+* Member access control is able to configure by page(include CMS page), by category, by product level
+* Set show/hide membership information block on left/right column
+* At back office, new tab Membership is added, you can confirm membership details.
+* You can export membership information into Excel file, with filtering and sorting
+
+* Access Permission Denied page will be displayed if user try to access member only contents but does not have privilege.
+* My Membership is added to My Account. User is able to confirm membership at any time.
+* Once membership is expired, module will automatically detect and revoke all privileges.
+* User can choose membership at sign up
+* User can purchase new membership (renewal) before membership expiration. And the new membership will automatically add on and expiration date will automatically calculated.
+* User can use Voucher (issued by PrestaShop store) to purchase membership
+* After sign up or log in, module will add user selected membership to shopping cart and redirect user to order page directly, if user has not purchased membership yet.
+
+
+Version 1.2.0 - 2011.07.15
+* Automatically send membership expiration notice email before specified days. (New 2011.07.15)
+You can configure multiple emails to send by different days before expiration. For example, you send 3 emails at 1 day, 3 days and 7 days before expiration.
+
+
+Version 1.2.0.3 - 2011.07.15
+* Make all module files inside module folder, so make Zip installation available.
+* A cancel button at Membership tab to manually cancel a membership (reset groups and default group)
+* Automatically reset all expired membership groups and default group
+
+Version 1.2.0.4 - 2011.11.30
+* automatic adding membership to cart as cofigurable item
+
+Version 1.2.0.5 - 2011.12.27
+* free membership support
+  Price = 0 memership is free membership
+  Free free membership only can use once per user
+  Dot not qualify message will be displayed at shopping cart if user try to order 2nd time the same free membership
+  Even user order the same free membership again, it will not be added as valid membership
+
+Version 1.2.1.1 - 2012.04.14
+- Integration with Agile Multiple Seller - limit the number of products listing of seller 
+
+Version 1.2.1.5 - 2012.06.14
+- Fixed an issue at free membership.
+- fixed an issue at membership tab filtering by membership type
+
+
+Version 1.3.0 - 2012.09.20
+- Fixed the membership type issue when cancel then buy another type of membership  
+- limit free membership to 1 time only, even if use add quantity more than 1, only 1 will be used.
+- Fixed the membership type issue when expired then buy another type of membership at same day
+- Fixed the "Cancel" display issue when membership expired 
+- New feature: show membership history at My Membership page 
+- Compatible with prestashop 1.5
+
+Version 1.3.1 - 2012.10.22
+- Fixed "Access Permission Denied" issue at CMS category link.
+- Changed membership list in BO to show all records of membership;
+- added index to tables to improve performance when there are big number of membership records
+- save order status in membership history to improve performance when there are big number of membership records
+
+Version 1.3.2 - 2012.10.28
+- Changed to use Tools to get page name
+- Fixed Export file download issue.
+
+Version 1.3.3 - 2012.11.11
+- Display one time free membership warning (when user try to re-purchase) at both shopping cart summary and shipping carrier page.
+- Add order # to the membership tab so that it will be easiy to find out the order #
+
+Version 1.3.4 - 2012.11.22
+- Modified some text correction
+- Fixed a small warning error
+- Fixed an issue at cancel membership
+- Added a new field to membership_history to indicate cancellation.
+
+Version 1.3.5 - 2012.12.01
+- Further integration with Agile Multiple Seller/Vendor module.
+  A. Do not show membership signup at customer/seller signup page
+  B. Hide "My Membership" links at my account page and "My account" block
+  C. Show membership information and membership history inside "My Seller account" page
+
+Version 1.3.6 - 2013.02.17
+- Fixed an issue with member-only access control on New Products page at PrestaShop 1.5x
+- Make the email subject of Membership Expiration Reminder" translatable and use store default language.
+
+Version 1.3.7 - 2013.03.09
+- Fixed an issue at Memberships tab - sorting/pagination issue.
+
+Version 1.3.9 - 2013.04.06
+- Adjusted the module to be compatible with PrestaShop 1.5.4.0
+- Add new feature with integration with Agile Multiple Seller - when membership expires, disable seller account and its products if it is not renewed.
+
+Version 1.4.0 - 2013.06.02
+- fixed mail subject translation issue
+- fixed an issue the Membership tab only visible to SuperAdmin
+
+
+Version 1.4.1 - 2013.06.23
+- Membership cancellation refund voucher features
+  A. Admin is able to configure to issue refund membership cancellation voucher or not
+  A. Customer can also cancel membership at My Membership - Membership History
+  B. Refund voucher could be issued based
+  C. Refund voucher expiration is also configurable by admin
+
+- Changed code of back office admin tabs to use PrestqShop 1.5x standard, removed the compatibility with PrestaShop 1.4x
+  A. Memberships tab
+
+- Fixed a bug - an empty membership record is displayed at membership history for a new customer without membership.
+
+Version 1.4.3 - 2013.10.06
+- Change admin tab page to use PrestaShop 1.5x standard, remove 1.4x admin tab
+- fixed a bug: (prestashop 1.5.4 error)error displayed on "Access denied" page and GUI layout is collapsed.
+- fixed a bug: Membership fee displaying tax include/exclude 
+
+Version 1.4.4 - 2013.11.17
+1. Considering large number of categories (>1000), required Memebrship category under root category
+2. fixed an issue at exporting membership data - page not found.
+3. at My Memberships page, display date/time in format based on language of current user selected 
+4. New feature - Configure the module to hide "add to cart" buttons for non-member users. It will also block non-member user purchcase any products.
+5. The module will automatically create Membership category for Membership fees products and provide 2 default membership type, it makes easier for store owner to set up and configure the module.
+
+
+Version 1.4.5 - 2013.12.19
+- Configurable to choose allow customer to cancel membership or not
+- Configurable to allow customer to send membership cancellation request email
+- Further integration with Agile Paypal express checkout module with Subscribe button and other new features to make membership subscriotion more easier.
+
+Version 1.5.0.1 - 2014.04.05
+The moduke is integrated with Agile Paypal Express Checkout module to make membership subscription more easier.
+- Show "Subscribe" button on Memebrship product page so that user can click "Subscribe" button to subscribe membership instantly. 
+- Admin is able to configure the option to allow customer to choose repating times or use default to "Until Cancel"
+- Admin it able configure Agile Paypal Express Checkout module to prevent mix of membership prpducts and other normal product in one shopping cart.
+
+
+Version 1.5.0.3 - 2014.06.22
+- Fixed email template subject translation issue.
+- Compatible with Smart Cache for Javascript and Smart Cache for CSS
+
+Version 1.5.0.4 - 2014.08.23
+- Fixed an issue related to integration of multiple seller - when membership expired, seller is disbaled but products are still visible.
+- Fixed an URL issue in membership expiration reminder email at multiple seller environment.
+- Fixed a bug with membership renewal email - even the membership has been renewed, the reminder email wae till sending out.
+
+
+Next 
+- Changed to use PrestaShop 1.6x standard for confugration screen. (use theme file)
+- Fixed some translation issue.
+- Fixed an issue - Permission denied when access Blog category.
+- changed all hook names to use PrestaShop 1.6x instead of using alias.
+- Fixed sql error when sending membership renewal reminder email
+
+ 

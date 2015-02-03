@@ -1,0 +1,18 @@
+Dear {firstname} {lastname}
+
+Thank you for your recent purchase - order {order#} at {shop_name}
+
+
+We hope you are enjoying your products, and we would appreciate your feedback on the products you ordered.  Your feedback will be shared with other shoppers at {shop_name}.
+The links below will take you to the "Write Product Review" pages of each product you purchased.
+
+{items}
+
+We hope you will take the time to write a review for the products purchased, and thank you for your feedback.
+
+Sincerely,
+{shop_name}
+
+This review request email is sent out to you automatically by our Agile PrestaShop product review module.
+http://addons-modules.com/en/prestashop-admin-modules/29-agile-prestashop-product-reviews-rating-module.html
+

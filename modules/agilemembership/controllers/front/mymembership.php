@@ -1,0 +1,11 @@
+<?php /*
+///-build_id: 2014102018.1827
+/// This source file is subject to the Software License Agreement that is bundled with this 
+/// package in the file license.txt, or you can get it here
+/// http://addons-modules.com/store/en/content/3-terms-and-conditions-of-use
+///
+/// @copyright  2009-2012 Addons-Modules.com
+///
+*/
+${"\x47\x4c\x4f\x42\x41\x4c\x53"}["\x75kt\x62\x75\x79"]="i\x64_\x6de\x6d\x62\x65r\x73\x68\x69p_\x68i\x73\x74\x6f\x72\x79";${"\x47\x4c\x4f\x42A\x4c\x53"}["\x64\x75\x74\x6fy\x67\x68o\x77\x79"]="\x6d\x6fd\x75l\x65";include_once(_PS_ROOT_DIR_."/\x6d\x6fd\x75\x6ce\x73/\x61g\x69\x6c\x65me\x6d\x62\x65rshi\x70/\x61\x67\x69\x6cem\x65\x6db\x65r\x73\x68i\x70.p\x68\x70");include_once(_PS_ROOT_DIR_."/m\x6fdules/\x61gi\x6c\x65m\x65mbers\x68ip/\x43us\x74ome\x72M\x65\x6d\x62e\x72\x73hip.\x70\x68p");class AgileMembershipMyMembershipModuleFrontController extends ModuleFrontController{public$auth=true;public$display_column_left=false;public$display_column_right=false;public$ssl=true;public function initContent(){global$smarty,$cart;parent::initContent();${${"G\x4c\x4f\x42\x41L\x53"}["\x64\x75\x74o\x79\x67\x68o\x77\x79"]}=new AgileMembership();$module->process_mymembership();$this->setTemplate("mym\x65mb\x65r\x73\x68\x69\x70.t\x70\x6c");}public function postProcess(){if(Tools::getValue("pro\x63\x65\x73s")=="c\x61ncel"){$tgjecqvxvrw="i\x64\x5f\x6de\x6d\x62\x65\x72\x73h\x69\x70_\x68i\x73\x74\x6f\x72\x79";${$tgjecqvxvrw}=intval(Tools::getValue("\x69\x64_\x6de\x6db\x65rship\x5f\x68ist\x6f\x72y"));CustomerMembership::cancelMembership(${${"\x47\x4c\x4f\x42\x41\x4c\x53"}["\x75\x6b\x74\x62uy"]});return;}else if(Tools::getValue("\x70ro\x63\x65\x73s")=="\x63a\x6ecelr\x65\x71\x75\x65s\x74"){${"GLO\x42ALS"}["\x76j\x6f\x70\x6a\x71"]="i\x64\x5f\x6de\x6dbe\x72\x73\x68\x69\x70\x5fh\x69stor\x79";${${"\x47\x4c\x4fBA\x4cS"}["u\x6b\x74\x62\x75\x79"]}=intval(Tools::getValue("i\x64\x5fmem\x62er\x73\x68i\x70_his\x74or\x79"));CustomerMembership::cancelMembershipRequest(${${"\x47\x4c\x4f\x42AL\x53"}["\x76\x6a\x6f\x70\x6aq"]});return;}parent::postProcess();}}
+?>

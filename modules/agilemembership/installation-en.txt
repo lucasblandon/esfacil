@@ -1,0 +1,18 @@
+﻿How to install on PrestaShop 1.4x
+=================================
+1. Login to PrestaShop back office and click Modules tab
+2. Click "Add a module from my computer" and choose the module package you have downlaoded and click "Upload this module"
+3. Input "agile" in the search bix of Module page and select "Agile Membership"
+4. Click "install" link under the module, the module will be installed automatically.
+5. Click "Configure" link under the module, it will bring you to the module configuration screen
+
+How to install on PrestaShop 1.3x or lower
+==========================================
+1. Unzip the downloaded file to temporary folder
+2. Transfer whole folder "agilemembership" to the modules folder of your PrestaShop
+3. Log in to your back office, go Modules tab
+   Look for "Agile Membership" and click "install". 
+   The module will be automatically installed and "configure" link will appear.
+4. Click "Configure" to configure your "Agile Membership"
+Please also refer the notes on the module configuration screen
+

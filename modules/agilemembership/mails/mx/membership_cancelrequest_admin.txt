@@ -1,0 +1,16 @@
+Hi Administrator,
+
+The customer has submit a request to cancel his membership from {shop_name}.
+
+Customer Id: {customer_id}
+Customer Name: {firstname} {lastname}
+Customer Email: {email}
+
+Membership ID: {membership_id}
+Membership Name: {membership}
+Start: {membership_startdate}
+Expires: {membership_expiredate}
+Order#: {membership_orderno}
+
+Please review the cancellation policy and approve or reject the request within 3 business days.
+

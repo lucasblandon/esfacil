@@ -1,0 +1,33 @@
+﻿PrestaShop 1.4x and higher - Install
+============================================
+1. Login to PrestaShop back office and click Modules tab
+2. Click "Add a module from my computer" and choose the module package you have downlaoded and click "Upload this module"
+3. Input "agile" in the search bix of Module page and select "Agile Product Reviews"
+4. Click "install" link under the module, the module will be installed automatically.
+5. Click "Configure" link under the module, it will bring you to the module configuration screen
+   
+
+You are done with installation, further consigure the module you are ready to use it.
+
+In order to make review summary appear on Home Featured and category page
+Please make change to the following files.
+=========================================================================
+
+YourStoreRoot/themes/YourStoreThemme/product-list.tpl
+YourStoreRoot/modules/homefreatured/homefreatured.tpl
+YourStoreRoot/themes/YourStoreTheme/modules/homefreatured/homefreatured.tpl      (IF THE FILE EXISTS)
+
+1. Find following two lines in above files.  
+        {foreach from=$products item=product name=.................. THE LINE CONTINUES .............
+       	<li class="ajax_block_product {if $smarty.foreach.................. THE LINE CONTINUES .............
+
+2. After above two lines you found, insert following line
+            {if isset($is_agileproductreviews_installed)}   {getProductRatingSummary id_product=$product.id_product}    {/if}
+
+3. Change file /config/smarty.config.inc.php 
+Find this line
+smartyRegisterFunction($smarty, 'function', 'convertPrice', array('Product', 'convertPrice'));
+
+Inert this line after above line
+smartyRegisterFunction($smarty, 'function', 'getProductRatingSummary', array('Product', 'getProductRatingSummary')); 
+

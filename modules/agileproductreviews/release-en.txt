@@ -1,0 +1,126 @@
+﻿Relase Notes
+
+2011.06.19 - Version 1.0
+========================
+* Display latest reviews on home page (benefit your site SEO)
+* Configurable the number of reviews display at home page.
+* Configurable of waiting time to wait for next post, by seconds.
+* Configurable moderate review required or not
+* Configurable to send alert email to store owner
+* Configurable of allowing guest reviewer or required log in for posting reviews
+* Configurable to use Captcha to prevent spam when allowing guest reviewer
+* Partial star rating indicator.
+* Configurable to show reviewers name or not 
+* There are 3 predefined Criteriions: Quality, Performance, Value
+* Apply criterion to different level: Whole Catalog, Category, Product
+criterion and product mapping in one step 
+* Criterion are applied to new added products if the criterions are set to whole catalog or category level
+
+* Lanugae sensitive - display reviews in user's lanuage only by default,one click to include other languages.
+* Pagination of reviews list in product detailed page
+* Most validation is performed before post, so that user does not have to back and forth.
+* Duplication post is checked to avoid misuse or mistakes
+* Product average rating will be automatically displayed on following pages
+- home featured product list
+- category product list
+- search result product list
+- manufacturer product list
+* One click batch validation of customer reviews
+
+2011.07.11 - Version 1.0.1
+==========================
+* updated to fix some text translation issue.
+
+2011.10.08 - Version 1.1
+==========================
+* Enable place holder for rating summary in product list,
+  - so that you can use this place holder to adjust the location of the rating summmary
+  - It also fixes issue when you use 3rd party themes the does not has standard PrestaShop CSS and tags id
+
+2011.12.02 - Version 1.2.0
+  - Change the way that to display rating resut on list pages, not depending style class any more.
+
+2012.01.22 - Version 1.2.1
+  - Add a new feature to "Rate/Vote" for each review.
+
+2012.01.26 - Version 1.2.1
+  - Add a new feature to send email to customer who made order x Days ago and aks customer wtite a review for the products they purchased.
+2012.03.21 - Version 1.2.4
+  - Changed to use Hook instead of using ajax javascript for review summary on product list 
+  - Voting now is counted immediately after casting.
+
+2012.03.21 - Version 1.2.6
+  - Review Voting is changed to be configurable so that store owner can decided to use this feature or not.
+  - Change to show all reviews instead of show the reivews in visitors's language. 
+  - You can easily turn off/on of the setup guide at module configuration  screen to save your screen space for usful information.
+
+2012.04.08 - version 1.3.0
+  - Changed to use Hook instead of using ajax javascript for review summary on product list 
+  - Adjusted the module to work with latest version of PrestaShop 1.5 beta
+
+2012.04.19 - version 1.3.0.1
+ - The module now compatibale with microdata data structure and google Rich snippets,When review information is marked up in the body of a web page, Google(the same to other search engine) can identify it and use it to understand and present the information on your pages. Review information such as ratings and descriptions can help users to better identify pages with good content
+ - You can exlude some products (such as testing products) from the proudct review requesting.
+
+2012.07.05 version 1.3.0.8
+- Improvement on the stars title (tool tips), now it display with usful infformation like "Performance grade 4" instead of grade_4. 
+- option to allow capcha even it is logged in
+
+
+2012.07.05 version 1.3.1.0
+- Changed to AJAX way to populate the Reviews tab of product detail at front office, so that the page is much more user friendly and static. It also means fast, no page refresh. Also avoid pagination conflict with other modules at the product page. 
+- Add new tab at back office you can approve, delete, edit reviews (to modify typos) if necessary. Mske it easy for admin to moderate the revews.
+
+2012.08.11 version 1.3.1.2
+- Add new feature - now the module allows the store owner to respond a customer review. The respond message will also be displayed under review message. This is good feature for store owner to respond unfair reviews.
+
+2012.10.21 version 1.4.0
+- Module is adjusted to be compatble with PrestaShop 1.5x
+
+2013.06.02 version 1.4.4
+- Changed to use Tools::addJS() for add javascript files instead of use include it in tpl file directly.
+- Changed to show current language only at review list of product Reviews tab
+- Changed to show current language only for Latest Reviews at Home
+
+2013.08.03 version 1.4.5
+- fixed an issue adding new products at PrestaShop 1.5x, this happens only when you choose to use different review criterion for different products.
+
+2013.10.01 version 1.4.6
+- changed to AdminModuleController(PrestaSgop 1.5x standard) instead of using AdminTab(PrestaShop 1.4x)
+- fixed ranting star displaying issue at HTTPS environment
+
+2014.07.19 version 1.5.0.1
+- Supports PrestaShop 1.6x
+- Supports responsive theme design
+
+
+2014.10.02 version 1.5.1.0
+- prestashop multishop suport
+- restrict review request email to exclude order status (6,7,8) (cancelled, payment error, refunded)
+- fixed an issue with review voting under HPPTS environment.
+- fixed a potential issue that review stars does no shows up at Google search result under some 3rd party themes.
+
+
+Future release
+==============
+- option to choose send email to orders only have a specific status
+
+
+
+And maybe not send to people who have chosen to opt-out of email (I know we want to get reviews, but not at the possibility of annoying customers)
+
+And the photo upload feature mentioned as a potential future development would be fantastic.
+modify/edit customer comments with this module? (not editing manually database
+"uplaod a pic" function on each review.
+
+
+http://support.google.com/webmasters/bin/answer.py?hl=en&answer=99170
+http://support.google.com/webmasters/bin/answer.py?hl=en&answer=146645
+Snippets—the few lines of text that appear under every search result—are designed to give users a sense for what’s on the page and why it’s relevant to their query.
+
+When review information is marked up in the body of a web page, Google(the same to other search engine) can identify it and use it to understand and present the information on your pages. Review information such as ratings and descriptions can help users to better identify pages with good content
+
+If Google understands the content on your pages, we can create rich snippets—detailed information intended to help users with specific queries. For example, the snippet for a restaurant might show the average review and price range; the snippet for a recipe page might show the total preparation time, a photo, and the recipe’s review rating; and the snippet for a music album could list songs along with a link to play each song. These rich snippets help users recognize when your site is relevant to their search, and may result in more clicks to your pages.
+
+You can help Google surface this relevant information by adding additional HTML markup to your pages. This markup helps Google recognize certain types of data and display it usefully in rich snippets.
+

@@ -1,0 +1,7 @@
+Hi {firstname} {lastname},
+
+Your membership has been activated.
+ 
+You can now access all memeber only contents: {shop_url}
+
+{shop_url}

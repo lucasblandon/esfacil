@@ -1,0 +1,9 @@
+Hi {firstname} {lastname},
+
+{description}.
+
+{value} voucher has been created with code '{code}', it will expire on {date_to}. 
+
+Thank you for using {shop_name} as your online marketplace.  If there is anything we can do to assist you in any way, feel free to contact us.
+
+Our website: {shop_url}

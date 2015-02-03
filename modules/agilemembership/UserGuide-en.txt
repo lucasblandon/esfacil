@@ -1,0 +1,8 @@
+About membership expiration reminder email
+===========================================
+You can cofigure to send email at multiple timing to reminder membership expiration/renewal. For example, you can send email at 7 days, 3 days or 1 day before expiration. You can do this at module configuration screen.
+
+The email delivery will be triggered when some one visit any page of your front store. Every time the module will send max 10 emails to avoid being considered as spam/junk mail, also for the server performance.
+
+You can also set cron job to run following script if you think there is will no visitors of your site at beginning.
+YourStoreRoot/modules/agilemembership/sendreminder.php
